@@ -1,0 +1,14 @@
+version: '3'
+services:
+    database:
+        image: 'mongo'
+        container_name: 'MyMongoDB'
+        environment: 
+            - MONGO_INITDB_DATABASE=contactFormDB
+            - MONGO_INITDB_ROOT_USERNAME=contactFormApp
+            - MONGO_INITDB_ROOT_PASSWORD=GT5tgfde
+        volumes: 
+            - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+            - /Users/jp/Dev/Docker/MongoDB/data:/data/db
+        ports:
+            - '27017-27019:27017-27019'
