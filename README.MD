@@ -39,4 +39,4 @@ db.createUser(
 
 ```
 ./gomongo.sh
-```
+``` 
