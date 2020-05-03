@@ -34,3 +34,9 @@ db.createUser(
     }
 )
 ```
+
+4. Start the database
+
+```
+./gomongo.sh
+```
